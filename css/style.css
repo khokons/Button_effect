@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.item {
+    text-align: center;
+    padding: 100px 300px;
+}
+
+
+.item a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 100px;
+    padding: 15px 50px;
+    background-color: #43b97e;
+    border-radius: 5px;
+    transition: .4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.item a span{
+    position: relative;
+}
+
+.item a span::before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 25px;
+    top: 50%;
+    left: -40px;
+    background: url(../images/button_shape.png) no-repeat center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.item a span::after{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 25px;
+    top: 50%;
+    right: -40px;
+    background: url(../images/button_shape.png) no-repeat center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.item a::before {
+    position: absolute;
+    content: '';
+    right: -28px;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    background-color: #fff00c;
+    transform: skewX(-45deg);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.item a:hover::before{
+    width: 122%;
+    transform: skewX(0deg)!important;
+    -webkit-transform: skewX(0deg)!important;
+    -moz-transform: skewX(0deg)!important;
+    -ms-transform: skewX(0deg)!important;
+    -o-transform: skewX(0deg)!important;
+}
